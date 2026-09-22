@@ -4,8 +4,6 @@ This repository is a hands-on study guide for cloud and DevOps interview prepara
 
 The repo starts with AWS core services using both PowerShell and Bash shell scripts. The same pattern will be expanded across Azure, GCP, Linux, automation, containers, orchestration, observability, and security topics.
 
-Some of the linux scripts are based on https://roadmap.sh/projects/log-archive-tool
-
 ## Study Areas
 
 | Folder | Focus |
