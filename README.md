@@ -26,17 +26,49 @@ Some of the linux scripts are based on https://roadmap.sh/projects/log-archive-t
 
 ## Current AWS Scripts
 
-The `aws/` folder contains paired PowerShell and Bash scripts for creating and practicing with AWS services:
+The [`aws/`](aws/) folder contains paired PowerShell and Bash scripts for creating and practicing with AWS services, covering a full three-tier architecture build from IAM setup through Systems Manager. See [`aws/README.md`](aws/README.md) for the full step map, resource discovery notes, and cost warnings.
 
 | Step | PowerShell | Bash |
 | --- | --- | --- |
-| 1 | `aws-step1-create-user.ps1` | `aws-step1-create-user.sh` |
-| 2 | `aws-step2-setup-vpc.ps1` | `aws-step2-setup-vpc.sh` |
-| 3 | `aws-step3-launch-ubuntu-ec2.ps1` | `aws-step3-launch-ubuntu-ec2.sh` |
-| 3 | `aws-step3-launch-windows-ec2.ps1` | `aws-step3-launch-windows-ec2.sh` |
-| 4 | `aws-step4-secure-s3.ps1` | `aws-step4-secure-s3.sh` |
+| 1 | [aws-step1-create-user.ps1](aws/aws-step1-create-user.ps1) | [aws-step1-create-user.sh](aws/aws-step1-create-user.sh) |
+| 2 | [aws-step2-setup-vpc.ps1](aws/aws-step2-setup-vpc.ps1) | [aws-step2-setup-vpc.sh](aws/aws-step2-setup-vpc.sh) |
+| 3 | [aws-step3-launch-ubuntu-ec2.ps1](aws/aws-step3-launch-ubuntu-ec2.ps1) | [aws-step3-launch-ubuntu-ec2.sh](aws/aws-step3-launch-ubuntu-ec2.sh) |
+| 3 | [aws-step3-launch-windows-ec2.ps1](aws/aws-step3-launch-windows-ec2.ps1) | [aws-step3-launch-windows-ec2.sh](aws/aws-step3-launch-windows-ec2.sh) |
+| 4 | [aws-step4-secure-s3.ps1](aws/aws-step4-secure-s3.ps1) | [aws-step4-secure-s3.sh](aws/aws-step4-secure-s3.sh) |
+| 5 | [aws-step5-setup-3-tier-architecture-windows-ec2.ps1](aws/aws-step5-setup-3-tier-architecture-windows-ec2.ps1) | [aws-step5-setup-3-tier-architecture-ubuntu-ec2.sh](aws/aws-step5-setup-3-tier-architecture-ubuntu-ec2.sh) |
+| 6 | [aws-step6-attach-ebs.ps1](aws/aws-step6-attach-ebs.ps1) | [aws-step6-attach-ebs.sh](aws/aws-step6-attach-ebs.sh) |
+| 7 | [aws-step7-create-efs.ps1](aws/aws-step7-create-efs.ps1) | [aws-step7-create-efs.sh](aws/aws-step7-create-efs.sh) |
+| 8 | [aws-step8-create-elb.ps1](aws/aws-step8-create-elb.ps1) | [aws-step8-create-elb.sh](aws/aws-step8-create-elb.sh) |
+| 9 | [aws-step9-create-autoscaling.ps1](aws/aws-step9-create-autoscaling.ps1) | [aws-step9-create-autoscaling.sh](aws/aws-step9-create-autoscaling.sh) |
+| 10 | [aws-step10-create-rds.ps1](aws/aws-step10-create-rds.ps1) | [aws-step10-create-rds.sh](aws/aws-step10-create-rds.sh) |
+| 11 | [aws-step11-create-dynamodb.ps1](aws/aws-step11-create-dynamodb.ps1) | [aws-step11-create-dynamodb.sh](aws/aws-step11-create-dynamodb.sh) |
+| 12 | [aws-step12-create-lambda.ps1](aws/aws-step12-create-lambda.ps1) | [aws-step12-create-lambda.sh](aws/aws-step12-create-lambda.sh) |
+| 13 | [aws-step13-deploy-cloudformation.ps1](aws/aws-step13-deploy-cloudformation.ps1) | [aws-step13-deploy-cloudformation.sh](aws/aws-step13-deploy-cloudformation.sh) |
+| 14 | [aws-step14-create-cloudwatch.ps1](aws/aws-step14-create-cloudwatch.ps1) | [aws-step14-create-cloudwatch.sh](aws/aws-step14-create-cloudwatch.sh) |
+| 15 | [aws-step15-systems-manager.ps1](aws/aws-step15-systems-manager.ps1) | [aws-step15-systems-manager.sh](aws/aws-step15-systems-manager.sh) |
+
+Step 12 also includes [aws-step12-lambda-function.py](aws/aws-step12-lambda-function.py), and Step 13 includes [aws-step13-cloudformation-template.yaml](aws/aws-step13-cloudformation-template.yaml).
 
 These scripts are intended to support interview prep by connecting theory to practical command-line work.
+
+## Current Linux/Bash Scripts
+
+The [`linux-bash-shell/`](linux-bash-shell/) folder contains standalone bash scripts automating common Linux system administration tasks — routine checks, user provisioning/offboarding, and troubleshooting. See [`linux-bash-shell/README.md`](linux-bash-shell/README.md) for full descriptions.
+
+| Script | Category |
+| --- | --- |
+| [disk_usage_check.sh](linux-bash-shell/disk_usage_check.sh) | Routine |
+| [log_archive.sh](linux-bash-shell/log_archive.sh) | Routine |
+| [patch_audit.sh](linux-bash-shell/patch_audit.sh) | Routine |
+| [user_access_review.sh](linux-bash-shell/user_access_review.sh) | Routine |
+| [process_monitor.sh](linux-bash-shell/process_monitor.sh) | Routine |
+| [cron_audit.sh](linux-bash-shell/cron_audit.sh) | Routine |
+| [service_health_check.sh](linux-bash-shell/service_health_check.sh) | Routine |
+| [create_user.sh](linux-bash-shell/create_user.sh) | Provisioning |
+| [offboard_user.sh](linux-bash-shell/offboard_user.sh) | Provisioning |
+| [service_recovery.sh](linux-bash-shell/service_recovery.sh) | Troubleshooting |
+| [disk_full_response.sh](linux-bash-shell/disk_full_response.sh) | Troubleshooting |
+| [network_diagnostics.sh](linux-bash-shell/network_diagnostics.sh) | Troubleshooting |
 
 ## How To Use This Repo
 
@@ -80,4 +112,4 @@ This guide is meant to help you build confidence with:
 
 ## Repo Status
 
-This is an active learning repository. The AWS section is the starting point, and additional folders and examples will be added over time for Azure, GCP, Linux/Bash, Git/GitHub, Terraform, Ansible, Docker, Kubernetes, Observability, and Security/Compliance.
+This is an active learning repository. The AWS section now covers a full three-tier architecture build (Steps 1–15), and the Linux/Bash section has an initial set of system administration scripts. Additional folders and examples will be added over time for Azure, GCP, Git/GitHub, Terraform, Ansible, Docker, Kubernetes, Observability, and Security/Compliance.

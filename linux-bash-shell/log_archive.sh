@@ -1,7 +1,15 @@
-!#/bin/bash
+#!/bin/bash
 
-# This tool runs from the command line, accept the log folder and log archive folder as arguments, compresses the logs, 
-# and stores them in a log archive folder. Default to log_folder and log_archive_folder if not provided.
+#!/usr/bin/env bash
+# ============================================================
+# Author: Anuradha Iyer
+# Date: 2026-09-21
+# Description: This tool runs from the command line, accept the 
+#              log folder and log archive folder as arguments, 
+#              compresses the logs, and stores them in a log 
+#              archive folder. Default to log_folder and 
+#              log_archive_folder if not provided.
+# ============================================================
 
 # Assign arguments or fall back to default values
 log_folder="${1:-log_folder}"

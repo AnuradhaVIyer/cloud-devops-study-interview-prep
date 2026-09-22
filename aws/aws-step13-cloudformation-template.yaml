@@ -1,0 +1,34 @@
+# ============================================================
+# Author:      Anuradha Iyer
+# Date:        2026-09-22
+# Description: Step 13 - CloudFormation demonstration stack for a versioned, encrypted S3 artifact bucket.
+# ============================================================
+AWSTemplateFormatVersion: '2010-09-09'
+Description: AWS three-tier CloudFormation demonstration bucket
+Resources:
+  ArtifactBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+          - ServerSideEncryptionByDefault:
+              SSEAlgorithm: AES256
+      VersioningConfiguration:
+        Status: Enabled
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: true
+        BlockPublicPolicy: true
+        IgnorePublicAcls: true
+        RestrictPublicBuckets: true
+      Tags:
+        - Key: Project
+          Value: aws-three-tier
+        - Key: Environment
+          Value: dev
+        - Key: ManagedBy
+          Value: cloudformation
+Outputs:
+  BucketName:
+    Value: !Ref ArtifactBucket
+  BucketArn:
+    Value: !GetAtt ArtifactBucket.Arn
