@@ -1,8 +1,72 @@
-# Cloud DevOps Study & Interview Prep
+# CloudHER Cohort 1 — Cloud DevOps Portfolio
 
-This repository is a hands-on study guide for cloud and DevOps interview preparation. It is designed to help you practice core infrastructure concepts by creating, configuring, and securing real services with scripts, notes, and repeatable examples.
+## Background
+
+My path into cloud and DevOps began with hands-on training through the AWS re/Start 
+program and the DevOps Micro Internship (DMI), where I built a strong technical 
+foundation in cloud infrastructure and automation. Despite this preparation, translating 
+that foundation into a successful return to the workforce proved difficult on my own.
+
+Joining CloudHER Cohort 1 gave me the structured mentorship and accountability I needed 
+to close that gap. This repository reflects that journey — a hands-on study guide built 
+during the program, where I practiced core infrastructure concepts by creating, 
+configuring, and securing real services through scripts, notes, and repeatable examples.
 
 The repo starts with AWS core services using both PowerShell and Bash shell scripts. The same pattern will be expanded across Azure, GCP, Linux, automation, containers, orchestration, observability, and security topics.
+
+## CloudHER Cohort 1 — Week 12 Output
+
+*Mentor: Obiora Okoye, CloudHER Cohort 1*
+
+### How This Repo Came to Be
+
+I joined CloudHER Cohort 1 while re-entering the tech industry after a career break. 
+In our early sessions, Obiora and I focused first on positioning — reworking my resume 
+and LinkedIn profile so they clearly communicated the value I could bring, not just a 
+list of past titles and tools.
+
+From there, the conversation shifted to a gap I hadn't fully named myself: courses and 
+certifications alone weren't enough. What I needed was consistent, unaided, hands-on 
+practice — building and breaking things myself, the way I'd be expected to on the job. 
+That's the gap this repository was built to close.
+
+Obiora also pushed me to change how I approached the job search itself — to stop applying 
+to a handful of roles and wait, and instead apply broadly and consistently, week over 
+week. He also encouraged me to post consistently on LinkedIn, not just publicly on my 
+main feed but directly into relevant communities like SRE and DevOps groups, to reach the 
+right audience. That shift is reflected below: 35+ applications submitted, a technical 
+take-home project completed, and active interview conversations underway.
+
+### Where I Started
+
+Rebuilding hands-on AWS and Linux skills from the ground up, starting with AWS Console 
+basics (IAM, VPC, EC2).
+
+### What I Built
+
+- A full three-tier AWS architecture build (Steps 1–15) in paired Bash and PowerShell — 
+  IAM, VPC/networking, EC2 (Linux + Windows), S3, EBS/EFS, load balancing, autoscaling, 
+  RDS, DynamoDB, Lambda, CloudFormation, CloudWatch, and Systems Manager
+- A set of Linux system administration scripts covering routine checks, user 
+  provisioning/offboarding, and troubleshooting
+- Practical Git/GitHub workflow skills — branching, pull requests, code review, and merging
+
+### What I Learned
+
+- How to go from AWS Console click-ops to CLI-driven, repeatable infrastructure builds
+- Collaborative Git workflows (not just pushing to main)
+- How to turn hands-on practice into an applied, high-volume job search strategy
+
+### Where I Am Now
+
+Actively interviewing for DevOps/Cloud roles, with this repo serving as live proof of 
+hands-on capability — and a stronger resume and LinkedIn presence behind it.
+
+### What's Next
+
+Expanding into Terraform/IaC, adding Kubernetes and CI/CD sections, and continuing to 
+apply this repo's pattern — and the job search discipline Obiora helped instill — to 
+the next stage of my career.
 
 ## Study Areas
 
