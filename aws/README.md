@@ -24,22 +24,26 @@ Run Steps 1–15 in order.
 ## Cost warning
 EC2, NAT Gateway, Application Load Balancer, RDS, EFS, Auto Scaling and CloudWatch resources can incur AWS charges. Delete resources after the lab when they are no longer needed.
 
-## Step map
-1 IAM User Setup
-2 VPC Setup
-3 EC2 Launch (Ubuntu and Windows variants)
-4 S3 Bucket Security
-5 Three-Tier Architecture Setup (Ubuntu bash / Windows PowerShell)
-6 EBS Volume Attach
-7 EFS
-8 Application Load Balancer
-9 Auto Scaling
-10 RDS
-11 DynamoDB
-12 Lambda
-13 CloudFormation
-14 CloudWatch
-15 Systems Manager
+## Architecture Overview
+![Architecture Diagram](images/AWS-3-tier-architecture.png)
+
+## Step Map
+
+1. IAM User Setup
+2. VPC Setup
+3. EC2 Launch (Ubuntu and Windows variants)
+4. S3 Bucket Security
+5. Three-Tier Architecture Setup (Ubuntu bash / Windows PowerShell)
+6. EBS Volume Attach
+7. EFS
+8. Application Load Balancer
+9. Auto Scaling
+10. RDS
+11. DynamoDB
+12. Lambda
+13. CloudFormation
+14. CloudWatch
+15. Systems Manager
 
 ## File Index
 
